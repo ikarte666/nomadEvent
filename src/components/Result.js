@@ -341,7 +341,7 @@ const Result = (props) => {
     return (
         <div>
             {isLoading && <Loading />}
-            {!isLoading && <ResultComponent result={"INGC"} />}
+            {!isLoading && <ResultComponent result={result()} />}
         </div>
     );
 };
